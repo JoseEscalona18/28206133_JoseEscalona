@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Ejemplo Nro 1</title>
-        <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
-        <link rel="stylesheet" href="main.css"/>
-    </head>
-
-    <body>
-        
-
-
-    </body>
-
+<head>
+	<meta charset="UTF-8">
+	<title>EscaTech CA</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+		<div class="EscaTech-Logo">
+			<a href="index.html"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA"> </a>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<ion-icon name="search-outline"></ion-icon>
+					<input type="text" placeholder="Buscar" style="text-indent: 10px;">
+				</li>
+				<li> <a href="index.html">Inicio</a> </li>
+				<li> <a href="#">Productos</a> </li>
+				<li> <a href="#">Contacto</a> </li>
+				<li> <button>Acceder</button> </li>
+				<li> <button>Registrar</button> </li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Productos destacados</h2>
+			<ul>
+				<li><a href="#"><img src="producto1.jpg" alt="Producto 1"><br>Producto 1</a></li>
+				<li><a href="#"><img src="producto2.jpg" alt="Producto 2"><br>Producto 2</a></li>
+				<li><a href="#"><img src="producto3.jpg" alt="Producto 3"><br>Producto 3</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Productos por categoría</h2>
+			<ul>
+				<li><a href="#">Computadoras</a></li>
+				<li><a href="#">Teléfonos</a></li>
+				<li><a href="#">Periféricos</a></li>
+				<li><a href="#">Laptops</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Contacto</h2>
+			<form action="#" method="post">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre"><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje"></textarea><br>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Derechos reservados &copy; 2023 Tienda de tecnología</p>
+	</footer>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
