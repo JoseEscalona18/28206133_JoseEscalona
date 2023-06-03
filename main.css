@@ -278,6 +278,7 @@ footer p {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .Categorias li {
@@ -294,6 +295,9 @@ footer p {
     align-items: center;
     text-align: center;
     font-size: 40px;
+    border-left: 1px solid #ffffff;
+    border-width: 1px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
 
 }
 
@@ -302,6 +306,7 @@ footer p {
     background-position: right center;
     margin: 0;
     filter: brightness(0.7) contrast(0.9);
+
 }
 
 .Categorias li.Laptops {
