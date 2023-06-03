@@ -1,17 +1,52 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #031420;
+    background-color: #000736;
     color: #fff;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
 
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.2));
+}
+
+@keyframes RGB {
+    0% {
+        border-color: rgb(61, 3, 218);
+    }
+    25% {
+        border-color: rgb(91, 208, 255); 
+    }
+    50% {
+        border-color: rgb(0, 0, 255); 
+    }
+    75% {
+        border-color: rgb(86, 77, 204); 
+    }
+    100% {
+        border-color: rgb(0, 255, 255); 
+    }
+} 
+
+p {
+    font-family: 'Barlow';
+    font-weight: SemiBold;
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-weight: 900;
 }
 
 nav ul {
@@ -32,6 +67,7 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Rubik', bold;
 }
 
 li ion-icon{
@@ -43,19 +79,8 @@ li input {
     border-radius: 10px;
 }
 
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    margin-top: 0;
+li button {
+    border-radius: 6px;
 }
 
 ul {
@@ -64,16 +89,16 @@ ul {
     padding: 0;
 }
 
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 form label {
     display: block;
     margin-bottom: 10px;
+}
+
+main section{
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
 }
 
 form input[type="text"],
@@ -136,3 +161,43 @@ footer p {
   display: inline-block;
 }
 
+.QuienesSomos {
+    overflow: hidden;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+  
+.QuienesSomos img {
+    float: left;
+    width: 40%; 
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+  
+.QuienesSomos h2 {
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    align-items: center;
+}
+
+.QuienesSomos p {
+    padding-right: 20px;
+    margin-top: 0px;
+    text-align: justify;
+    flex: 1;
+}
+
+.Productosdestacados {
+    overflow: hidden;
+    align-items: center;
+    max-width: 2500px;
+    margin: auto;
+    
+}
