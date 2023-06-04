@@ -32,7 +32,7 @@
         <section style="background-color: #E0F2FB;">
             <div class="QuienesSomos">
                 <img src="images/Gamer.jpg" alt="Gamer">
-                <h2>¿Quienes somos?</h2>
+                <h2>¿Quiénes somos?</h2>
                 <p> Somos una empresa especializada en la venta de equipos y componentes de informática para gamers. Nuestro objetivo es proporcionar a nuestros clientes la mejor experiencia de juego posible, ofreciendo productos de alta calidad a precios competitivos. </p>
                 <p> En nuestra tienda, encontrarás una amplia variedad de productos para gamers, incluyendo equipos de escritorio, portátiles, monitores, teclados, ratones, auriculares y más. Además, ofrecemos servicios de reparación y configuración de equipos informáticos, para que puedas estar seguro de que tus dispositivos están en las mejores manos. </p>
 			</div>     
@@ -67,7 +67,7 @@
             </div>
 			<a class="MostrarMas" href="#">Mostrar mas productos</a>
 		</section>
-		<section style="background-color: bisque;">
+		<section>
 			<ul class="Categorias">
 				<li onclick="window.location.href='#'" class="Computadoras"><a href="#">Computadoras</a></li>
 				<li onclick="window.location.href='#'" class="Telefonos"><a href="#">Teléfonos</a></li>
@@ -75,18 +75,48 @@
 				<li onclick="window.location.href='#'" class="Laptops"><a href="#">Laptops</a></li>
 			</ul>
 		</section>
-		<section>
-			<h2>Contacto</h2>
-			<form action="#" method="post">
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre"><br>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email"><br>
-				<label for="mensaje">Mensaje:</label>
-				<textarea id="mensaje" name="mensaje"></textarea><br>
-				<input type="submit" value="Enviar">
-			</form>
+		<section class="Contacto">
+				<div class="InformacionContacto">	
+					<table>
+						<tr>
+							<td class="TextoContacto">
+								<h2 style="margin-top: 0;">Contacto para servicios de reparación y configuración de equipos</h2>
+								<a> En nuestra empresa, ofrecemos servicios de reparación y configuración de equipos informáticos para particulares y empresas. Si tu equipo presenta algún problema o no funciona correctamente, nuestro equipo de expertos en reparación de equipos informáticos estará a tu disposición para solucionar cualquier avería. <br><br> </a>
+								<a> Además, si necesitas configurar tu equipo para un uso específico, como por ejemplo para trabajar desde casa, nuestro equipo de expertos en configuración de equipos podrá ayudarte a optimizar tu equipo para que puedas trabajar con la máxima eficiencia. <br><br> </a>
+								<a> No importa si se trata de un problema de hardware o software, o si necesitas ayuda para configurar tu equipo para un uso específico, nuestro equipo de técnicos altamente capacitados está aquí para ayudarte. ¡No dudes en contactarnos para obtener más información sobre nuestros servicios de reparación y configuración de equipos!<br><br></a>
+							</td>
+							<td class="ImagenContacto"> <img src="/images/Reparacion.webp" alt="Reparaciones"> </td>
+						</tr>
+					</table>
+				</div>
+				<div class="Formulario">
+					<form action="#" method="post">
+						<h2> Agrega tus datos al formulario</h2>
+
+						<label for="nombre">Nombre:</label>
+						<ion-icon name="person-outline"></ion-icon>
+						<input type="text" id="nombre" name="nombre" class="Texto"><br>
+
+						<label for="email">Email:</label>
+						<ion-icon name="mail-outline"></ion-icon>
+						<input type="email" id="correo" name="correo" class="Texto"><br>
+
+						<label for="equipo">Equipo:</label>
+						<ion-icon name="desktop-outline"></ion-icon>
+						<input type="text" id="equipo" name="equipo" class="Texto"><br>
+
+						<label for="mensaje">Mensaje:</label>
+						<ion-icon name="text-outline"></ion-icon>
+						<input type="text" id="mensaje" name="correo" class="TextoMensaje"><br>
+
+						<input type="submit" value="Enviar formulario">
+					</form>
+				</div>	
 		</section>
+		
+		<button class="BotonFlotante">
+			<a> <ion-icon name="cart-outline"></ion-icon> </a>
+		</button>
 	</main>
 	<footer>
 		<p>Derechos reservados &copy; 2023 Tienda de tecnología</p>

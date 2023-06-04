@@ -62,9 +62,9 @@ header img {
     }
 } 
 
-p, a {
+p, a, label{
     font-family: 'Barlow';
-    font-weight: SemiBold;
+    font-weight: 600;
 }
 
 h2,h1 {
@@ -120,17 +120,7 @@ form label {
 
 main section{
     align-items: center;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-
-    margin-bottom: 10px;
-    border: 1pxsolid #ccc;
-    border-radius: 5px;
-}
-
+} 
 form textarea {
     height: 150px;
 }
@@ -164,7 +154,7 @@ ul.categorias li {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000736;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -392,4 +382,81 @@ footer p {
     font-weight: 900;
     z-index: 1;
     text-decoration: none;
+}
+
+.BotonFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 10));
+    background-image: linear-gradient(to bottom, rgb(6, 205, 255), rgb(4, 135, 168), rgb(6, 205, 255));
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.BotonFlotante a ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.Contacto {
+    padding: 20px;
+    background-color: #E0F2FB;
+}
+
+.InformacionContacto {
+    margin: 0 auto;
+    max-width: 1850px;
+}
+
+.TextoContacto {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.ImagenContacto img {
+    width: 100%;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.Formulario {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 1850px;
+    margin: 0 auto;
+}
+
+.Texto {
+    width: 500px;
+    height: 30px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+    margin-bottom: 10px;
+    border: 1pxsolid #ccc;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.Formulario ion-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.TextoMensaje {
+    width: 500px;
+    height: 100px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+    margin-bottom: 10px;
+    border: 1pxsolid #ccc;
+    border-radius: 5px;
+    overflow-wrap: break-word;
 }
