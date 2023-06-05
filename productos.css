@@ -63,6 +63,7 @@ main section h2{
 
 .NavHeader ul {
     list-style: none;
+    margin: 0;
     margin-right: 25px;
     padding: 0;
     display: flex;
@@ -92,13 +93,14 @@ main section h2{
 }
 
 .NavHeader li button {
-    border-radius: 6px;
+    width: 80px;
+    height: 100%;
+    border-radius: 40px;
+    background: rgb(7, 50, 189)
 }
 
-.NavHeader ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.NavHeader li button a {
+    color: white;
 }
 
 .BarraLateral {
@@ -156,6 +158,12 @@ main section h2{
     border-radius: 20px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
     margin-bottom: 8px;
+}
+
+.ListaProductos li img:hover {
+    width: 270px;
+    height: 270px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));  
 }
 
 .ListaProductos li a {
@@ -227,3 +235,55 @@ footer p {
         color: rgb(93, 167, 209); 
     }
 } 
+
+@keyframes RGB3 {
+    0% {
+        background-color: rgb(61, 3, 218);
+    }
+    20% {
+        background-color: rgb(91, 208, 255); 
+    }
+    40% {
+        background-color: rgb(0, 0, 255); 
+    }
+    60% {
+        background-color: rgb(86, 77, 204); 
+    }
+    80% {
+        background-color: rgb(0, 255, 255); 
+    }
+    100% {
+        background-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes BlackWhite {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    20% {
+        color: rgb(0, 0, 0);
+    }
+    40% {
+        color: rgb(255, 255, 255);
+    }
+    60% {
+        color: rgb(255, 255, 255);
+    }
+    80% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+} 
+
+.BotonRegistrar {
+    background-color: rgb(61, 3, 218);
+    animation: RGB3 10s infinite ease-in-out;
+}
+
+.BotonRegistrar a {
+    color: white;
+    animation: BlackWhite 10s infinite ease-in-out;
+}
