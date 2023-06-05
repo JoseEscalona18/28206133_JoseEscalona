@@ -93,16 +93,16 @@ nav a {
     font-family: 'Rubik', bold;
 }
 
-li ion-icon{
+nav li ion-icon{
     margin-right: 5px;
     height: 21px;
 }
 
-li input {
+nav li input {
     border-radius: 10px;
 }
 
-li button {
+nav li button {
     border-radius: 6px;
 }
 
@@ -117,10 +117,10 @@ form label {
     margin-bottom: 10px;
 }
 
-
 main section{
     align-items: center;
 } 
+
 form textarea {
     height: 150px;
 }
@@ -234,7 +234,6 @@ footer p {
 .Productosdestacados li {
     margin: 10px;
     cursor: pointer;
-
 }
 
 .Productosdestacados a {
@@ -405,7 +404,7 @@ footer p {
 
 .Contacto {
     padding: 20px;
-    background-color: #E0F2FB;
+    background-image: linear-gradient(to bottom, #abe2fd, #E0F2FB, #abe2fd)
 }
 
 .InformacionContacto {
